@@ -1,0 +1,13 @@
+<h1>Welcome to Antique Store</h1>
+
+<!-- <h3>Search through past Purchases</h3> -->
+<br>
+<ul>
+<% @all_purchases.each() do |purchase| %>
+    <li><a href="/purchases/<%= purchase.id() %>"><%= purchase.name %></a>
+      <br><a href="/purchases/<%= purchase.id() %>/edit">Update this purchase</a></li>
+  <% end %>
+</ul>
+
+
+<p><a href="<%/purchases/new"</a>Add new purchase</p>
